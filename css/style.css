@@ -3,45 +3,37 @@
     padding: 0;
     list-style: none;
 }
-.tab {
+.header {
     background: #2222;
     text-align: center;
 }
-.tab>ul {
-    position: relative;
+.header .tab {
     display: flex;
     width: 285px;
     /* background: #7777; */
     margin: 0 auto;
 }
-.tab>ul>li {
+.header .tab li {
     padding: 10px;
     border: 1px solid red;
 }
-.tab ul li.is_on {
+.header .tab li.active {
     background: skyblue;
 }
-.tab>ul>li>a {
+.header .tab li a {
     color: #000;
     text-decoration: none;
 }
-.tab>ul>li>ul {
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+.content .list {
+    width: fit-content;
+    margin: 20px auto 0;
     display: none;
 }
-.tab ul ul.is_on {
-    background: #5555;
-    width: 285px;
-    position: absolute;
-    display: inline-block;
-    top: 40px;
-    left: 0;
-    background: skyblue;
-    border-top: 1px solid red;
-}
-.tab ul>li>ul>li {
-    padding: 5px;
-}
-.tab>ul>li>ul>li>a {
-    text-decoration: none;
-    color: #000;
+.content .active {
+    display: block;
 }
